@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>eazy2con</title>
+<link rel="stylesheet" href="images/styling.css">
+</head>
+
+<body>
+<!--This is nav-bar section-->
+
+<div class="topnav">
+<a href="index.html">Home</a>
+<a class="active" href="News.html">News</a>
+<a href="about.html">About</a>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+
+</div>
+
+<p>Our latest news </p>
+
+  <form name="RegForm" action="" onsubmit="return myJs()" method="post">
+        <p>Name:
+            <input type="text" name="Name">
+        </p>
+        <br>
+        <p> Address:
+            <input type="text" name="Address">
+        </p>
+        <br>
+        <p>E-mail Address:
+            <input type="text" name="EMail">
+        </p>
+        <br>
+        <p>Password:
+            <input type="text" name="Password">
+        </p>
+        <br>
+        <p>Telephone:
+            <input type="text" name="Telephone">
+        </p>
+        <br>
+        <p>
+            <input type="submit" value="send" name="Submit">
+        </p>
+    </form>
+	
+	
+	 <script>
+        functionmyJs() {
+            var name = document.forms["RegForm"]["Name"];
+            var address = document.forms["RegForm"]["Address"];
+            var email = document.forms["RegForm"]["EMail"];
+            var phone = document.forms["RegForm"]["Telephone"];
+            var password = document.forms["RegForm"]["Password"];
+ 
+            if (name.value === "") {
+                window.alert("Please enter your name.");
+                name.focus();
+                return false;
+            }
+ 
+            if (address.value === "") {
+                window.alert("Please enter your address.");
+                name.focus();
+                return false;
+            }
+ 
+            if (email.value === "") {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+ 
+            if (email.value.indexOf("@", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+ 
+            if (email.value.indexOf(".", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+ 
+            if (phone.value === "") {
+                window.alert("Please enter your telephone number.");
+                phone.focus();
+                return false;
+            }
+ 
+            if (password.value === "") {
+                window.alert("Please enter your password");
+                password.focus();
+                returnflase;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+
+
+</html>

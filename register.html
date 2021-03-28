@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>eazy2con</title>
+    <link rel="stylesheet" href="images/styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background:yellow">
+
+    <!-- my nav bar -->
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="News.html">News</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+
+    </div>
+    <div style="text-align:center" height="150px" width="300px" border-radius="500px">
+        <form class="signupform">
+            <strong><p>Register</p></strong><br><br>
+            <div>
+                <img src="images/eff.jpg" alt="image" style="border-radius: 50%;" height="70px">
+            </div><br><br>
+
+
+            <strong>First Name</strong> <input type="text" id="firstname"><br><br>
+            <strong>Surname Name</strong> <input type="text" id="surname"><br><br>
+            <strong>Gender</strong> <select name="gender" id="gender" style="font-family:news time: 15px;"><br><br>
+	<option>Male</option>
+	<option>FeMale</option>
+	<option>Others</option>
+	</select>
+            <strong><p>Select course</p></strong>
+            <input type="radio" name="course">Chemistry
+            <p>
+                <input type="radio" name="course">Physics
+                <p>
+                    <input type="radio" name="course">Economics
+                    <p>
+                        <strong>D.0.B</strong> <input type="date" value="date"><br><br>
+                        <input type="submit" value="submit" onclick="takeaction()"> <input type="reset" value="reset">
+
+        </form>
+    </div><br><br><br>
+
+
+    <footer class="footer">
+        <p>author @ Arizetbest.com</p>
+        <p>We lead others follow</p>
+
+    </footer>
+
+    <script>
+        function takeaction() {
+            let name = prompt(" type your name");
+            let surname = prompt("type your surname");
+            let email = prompt("type your email");
+
+            alert("welcome " + name + "  " + surname);
+
+            check(); // calling check fucction under takeaction functiontion
+
+        }
+
+        function check() {
+            let email = document.getElementById("email").value;
+            let surname = document.getElementById("surname").value;
+
+
+            alert("Welcome " + email + " " + surname);
+
+        }
+    </script>
+
+</body>
+
+</html>

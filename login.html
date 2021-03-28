@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>eazy2con</title>
+<link rel="stylesheet" href="images/styling.css">
+</head>
+
+<body>
+<!--This is nav-bar section-->
+
+<div class="topnav">
+<a href="index.html">Home</a>
+<a href="News.html">News</a>
+<a href="about.html">About</a>
+<a class="active" href="submit.html">Login</a>
+<a href="register.html">Register</a>
+
+</div>
+
+
+<form id="myforms" action="" onsubmit="return myform()" method="post">
+&nbsp <p>Login Page</p><br>
+User Name<input type="username" ><p>
+Password &nbsp <input type="password"> <br> <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ <input type="submit" value="submit" onclick="takeaction()">
+
+</form>
+
+
+
+<script>
+
+function myform (){
+let jsx = document.forms["myjsform"]["firstname"].value;
+	if (jsx==""){
+	alert("please fill your name");
+	return false;
+	}
+}
+
+</script>
+</body>
+
+
+</html>

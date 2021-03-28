@@ -1,0 +1,86 @@
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: blue;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.footer{
+	background-color:blue;
+	color:white;
+}
+/* nav bar with icon styling  */
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #00ff;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.footer{
+	height: 50px;
+	width:auto;
+	background-color:black;
+	padding-top:100px;
+}
+
+.footer p{
+	float:right;
+}
+
+.signupform{
+	width:50%;
+	background-color:green;
+}
+
+
+
